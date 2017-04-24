@@ -4,29 +4,13 @@
 <head>
 <meta charset="utf-8">
 <title>鄭家欣</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-
-<script type="text/javascript">
-  
-  $(function(){
-    var w = $("#slider_content").width();
-    $('#slider_content').css('height', ($(window).height() - 20) + 'px' ); 
-    $("#tab").mouseover(function(){
-      if ($("#slider_scroll").css('left') == '-'+w+'px')
-      {
-        $("#slider_scroll").animate({ left:'0px' }, 600 ,'swing');
-      }
-    });
-    $("#slider_content").mouseleave(function(){
-      $("#slider_scroll").animate( { left:'-'+w+'px' }, 600 ,'swing');  
-    }); 
-  });
-
-  
-
-  </script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   </head>
+  <script>
+  $(document).ready(function(){
+  $("button").css("color","blue");
+  });
+  </script>
 
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <iframe width="0" height="0" src="https://www.youtube.com/embed/SuBmxu1rzho?list=PL6rcH5B64dUc3SUGJ4RlDg8mxk667MCrh&autoplay=1&loop=20" frameborder="0" allowfullscreen></iframe>
